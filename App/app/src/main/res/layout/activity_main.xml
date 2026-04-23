@@ -5,25 +5,28 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#B6811C1C"
+    android:fadingEdge="horizontal"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="349dp"
         android:layout_height="55dp"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="28dp"
         android:text="Directed by Tom McGrath, Eric Darnell and Conrad Vernon"
         android:textAlignment="center"
+        android:textColor="#F4F2F2"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="468dp" />
+        tools:layout_editor_absoluteY="473dp" />
 
     <TextView
         android:layout_width="225dp"
         android:layout_height="87dp"
         android:text="Madagascar 3"
         android:textAlignment="center"
-        android:textColor="#F44336"
+        android:textColor="#F3F4EC"
         android:textSize="34sp"
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -31,23 +34,37 @@
         app:layout_constraintHorizontal_bias="0.553"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.525" />
+        app:layout_constraintVertical_bias="0.456" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="70dp"
+        android:layout_height="49dp"
         android:text="2012"
+        android:textAlignment="center"
+        android:textColor="#F8F3F3"
         android:textSize="20sp"
-        tools:layout_editor_absoluteX="198dp"
-        tools:layout_editor_absoluteY="434dp" />
+        tools:layout_editor_absoluteX="172dp"
+        tools:layout_editor_absoluteY="414dp" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="352dp"
         android:layout_height="102dp"
         android:text="Ben Stiller, Eric Darnell, Tom McGarth, Chris Rock and Jessica Chastain"
+        android:textAlignment="center"
+        android:textColor="#FBFBFB"
+        android:textSize="24sp"
         tools:layout_editor_absoluteX="26dp"
         tools:layout_editor_absoluteY="551dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:cropToPadding="true"
+        app:srcCompat="@drawable/mad"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="6dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
